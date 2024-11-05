@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  min-height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(
+      135deg,
+      rgba(255, 192, 203, 0.8),
+      rgba(255, 105, 180, 0.8)
+    ),
+    url(cake.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 70px;
+}
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navlinks ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+.navlinks ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffc0cb;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navlinks ul li:hover::after {
+  width: 100%;
+}
+footer {
+  background-color: #ffc0cb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer ul {
+  list-style: none;
+  display: block;
+  gap: 10px;
+}
+footer ul li {
+  display: flex;
+}
+.form {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+}
+.form h2 {
+  text-align: center;
+  color: #ffc0cb;
+  margin-bottom: 20px;
+}
+.form label {
+  font-weight: bold;
+  color: #ffabb9;
+  margin-top: 10px;
+}
+.form input,
+form textarea,
+form button {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #fadada;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+.container {
+  display: flex;
+  gap: 20%;
+}
+
+.image img {
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+}
+.about {
+  padding: 100px;
+  margin: 20px;
+}
+.about h2 {
+  text-align: center;
+  color: #ffabb9;
+  font-weight: 300;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.about p {
+  color: #ffabb9;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 10px;
+  line-height: 5vh;
+}

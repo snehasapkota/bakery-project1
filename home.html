@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="home.html"><img src = "cat.png"></a>
+        <div class="navlinks" id="navv">
+          <!--<i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>-->
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="produt.html">PRODUCT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">ABOUT US</a></li>
+          </ul>
+
+        </div>
+        <!--<i class="fa-solid fa-bars" onclick="showMenu()"></i>-->
+
+      </nav>
+      <div class="text">
+        <h1 id="heading"></h1>
+        <!-- JAVASCRIPT FOR WELCOME FONT-->
+        <script>
+          const heading = "WELCOME TO OUR BAKERY";
+          const headingElement = document.getElementById("heading");
+          const words = heading.split("");
+          let wordIndex = 0;
+
+          function showWords(){
+            if(wordIndex < words.length){
+              headingElement.innerHTML += words[wordIndex] + "";
+              wordIndex++;
+              setTimeout(showWords, 100); //to adjust time interval
+            }
+          }
+          showWords();
+        </script>
+        <p>Mking website is now one of the easiest thing in thw eorld, you just
+          need to learn HTML, CSS,<br> Java script and you are good to go.
+        </p>
+       <button class="menubutton"><a href="menu.html">MENU</a></button> 
+      </div>
+
+
+    </section>
+    <section class="section1">
+      <div class="cakes">
+      <h1>CAKE DELIGHT</h1>
+      <p>Cakes are more than just a dessert; they are a symbol of joy, indulgence, and celebration. From the moment the ingredients come together—flour, sugar, butter, eggs—a transformation begins, creating a soft, delicate crumb that melts in the mouth. The flavors are endless: rich chocolate that envelops the senses, velvety vanilla that soothes with its warmth, or the zest of fresh fruits like strawberries and lemons that brighten every bite. Frostings and fillings add layers of sweetness, whether a smooth buttercream, a tangy cream cheese, or a glossy ganache that shines like silk.
+        Every cake tells its own story. A simple slice can evoke memories of childhood birthdays, family gatherings, or late-night indulgences. The artistry of cake-making is equally captivating—from intricate designs adorned with fondant flowers and elegant piping to rustic, homey cakes dusted with powdered sugar. Whether towering in layers or humble and small, cakes have a way of turning ordinary moments into celebrations. They are a reminder that sweetness, in both taste and life, is meant to be savored.
+        Cakes are delicious treats, each one a masterwork of taste and technique. Every cake tells a narrative of sweetness and joy, whether it is light and fluffy with notes of vanilla, rich with layers of chocolate, or bursting with fresh fruits. When combined with creamy frostings or delicate glazes, the soft, supple crumb creates a symphony of flavors and sensations. Cakes delight the senses and turn every bite into a moment to be cherished, from straightforward tea cakes shared with friends to intricate, towering confections for special occasions. They are creating memories, not simply sweets.</p>
+</div>
+<div class="slideshow-container">
+  <div class="slide active">
+    <img src="cakes/c1.jpg" alt="cake 1">
+</div>
+<div class="slide">
+<img src="cakes/c2.jpg" alt="cake 2">
+</div>
+<div class="slide">
+<img src="cakes/c3.webp" alt="cake 3">
+</div>
+<div class="slide">
+  <img src="cakes/c6.jpg" alt="cake 6">
+</div>
+<div class="slide">
+  <img src="cakes/c5.jpg" alt="cake 5">
+</div>
+
+</div>
+
+    </section>
+    <section class="bestseller">
+      <h1>OUR BEST SELLER</h1>
+      <div class="container1">
+        <div class="cakebox">
+          <img src="special/p1.jpg" alt="p1">
+<div class="cakecontent">
+<h3>RAINBOW CAKE</h3>
+<p>Npr.250<span>/pastry/</span></p>
+</div>
+        </div>
+        <div class="cakebox">
+          <img src="special/p2.jpg" alt="p1">
+<div class="cakecontent">
+<h3>STRAWBERRY CHEESECAKE</h3>
+<p>Npr.300<span>/pastry/</span></p>
+</div>
+</div>
+<div class="cakebox">
+  <img src="special/p3.jpg" alt="p1">
+<div class="cakecontent">
+<h3>BLACK FOREST</h3>
+<p>Npr.250<span>/pastry/</span></p>
+</div>
+      </div>
+      
+      </div>
+      <div class="container1">
+        <div class="cakebox">
+          <img src="special/p4.jpg" alt="p1">
+<div class="cakecontent">
+<h3>TIRAMISU CAKE</h3>
+<p>Npr.400<span>/pastry/</span></p>
+</div>
+        </div>
+        <div class="cakebox">
+          <img src="special/p5.jpg" alt="p1">
+<div class="cakecontent">
+<h3>CHOCOLATE CROSSAINT</h3>
+<p>Npr.300<span>/pastry/</span></p>
+</div>
+</div>
+<div class="cakebox">
+  <img src="special/p6.jpg" alt="p1">
+<div class="cakecontent">
+<h3>PISTACHIO CAKE</h3>
+<p>Npr.350<span>/pastry/</span></p>
+</div>
+      </div>
+      
+      </div>
+    </section>
+    <section class="testimonial">
+      <h1>What Our Customer says</h1>
+<p>The art of baking requires precision in measurements, temperature control, and timing, as each type of baked good has its own unique process.</p>
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="cakes/jj.png">
+          <div>
+            <p>"This place is my go-to for sweet cravings! The cakes are always fresh, and the flavors are on point. The vibe inside is cozy, and the staff is super friendly. Giving it 4 stars because there’s always room for a bit more variety."
+
+
+
+
+
+
+            </p>
+           <h3>JEONGHAN</h3>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-regular fa-star"></i>
+          </div>
+
+        </div>
+        <div class="testimonial-col">
+          <img src="cakes/Screenshot 2024-10-23 152258.png">
+          <div>
+            <p>"It can be shown from my profile picture, that how much i enjoy eating at this bakery! That big bite says it all—pure satisfaction! Thanks for whoever recommend me this place and digging into treats with such enthusiasm."</p>
+           <h3>HOSHI KWON </h3>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-regular fa-star"></i>
+          </div>
+
+        </div>
+        <div class="testimonial-col">
+          <img src="cakes/dk.png">
+          <div>
+            <p>"Absolutely LOVE this bakery! Everything from the cakes to the pastries is always top-notch. The flavors are incredible, and you can tell they use fresh, quality ingredients. The staff is welcoming, and the atmosphere is cozy"</p>
+           <h3>DK</h3>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+           <i class="fa-sharp fa-solid fa-star"></i>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Our Bakery. All right reserved</p>
+        <p>
+            <ul class="footer">
+              <li>Follow us on</li>
+                <li>Instagram<i class="fa-brands fa-instagram"></i></li>
+                <li>Facebook<i class="fa-brands fa-facebook"></i></li>
+                <li>Twitter<i class="fa-brands fa-twitter"></i></li>
+            </ul>
+        </p>
+
+    </footer>
+    <!--JS FOR SLIDESHOW FOR CAKE IMAGES-->
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      function showSlides(){
+        //hise all slides
+        for (let i = 0; i < slides.length; i++){
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+
+        if (slideIndex > slides.length){
+          slideIndex = 1;
+        }
+
+        slides[slideIndex-1].style.display = "block";
+
+        setTimeout(showSlides, 1000);
+      }
+      showSlides();
+    </script>
+    <!--JS FOR DESCRIPTION-->
+    
+    
+  </body>
+</html>
